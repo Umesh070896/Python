@@ -91,3 +91,75 @@
 # numbers[1] = 40
 
 # print(numbers)
+
+
+"""Print positive and negative elements of a list in another list"""
+# l = [-45, 67, 12, -68, -69, 34]
+
+# positiveList = []
+# negativeList = []
+
+# for i in l:
+#     if i >= 0:
+#         positiveList.append(i)
+
+# print("Postive elements list is:", positiveList)
+
+# for i in l:
+#     if i < 0:
+#         negativeList.append(i)
+
+# print("Negative elements list is:", negativeList)
+
+"""Mean of list elements"""
+# l = [10, 20, 30, 40, 50]
+
+# total = 0
+
+# for i in l:
+#     total += i
+
+# mean = total / len(l)
+
+# print(f"The mean of list elements is {mean}")
+
+"""Find the largest element and its index in a list"""
+# l = [12, 567, 43, 235, 347, 590, 23, 7]
+
+# largest = l[0]
+# index = 0
+
+# for i in range(len(l)):
+#     if l[i] > largest:
+#         largest = l[i]
+#         index = i
+
+# print(f"The largest element is {largest} at index {index}")
+    
+"""Find the largest greatest element in a list"""
+# l = [12, 567, 43, 235, 347, 590, 23, 587]
+
+# largest = l[0]
+# secondLargest = l[0]
+
+# for i in range(len(l)):
+#     if l[i] > largest:
+#         secondLargest = largest
+#         largest = l[i]
+
+#     elif l[i] > secondLargest:
+#         secondLargest = l[i]
+
+# print(f"The largest element is {largest} and second largest element is {secondLargest}")
+
+"""Check if list is sorted or not"""
+# l = [1, 2, 3, 4, 6, 5, 7]
+
+# for i in range(len(l) - 1):
+#     if l[i] < l[i+1]:
+#         continue
+#     else:
+#         print("The list is not sorted")
+#         break
+# else:
+#     print("The list is sorted")
