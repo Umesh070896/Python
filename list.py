@@ -1,5 +1,6 @@
-"""List is a built-in data structure that can hold an ordered collection of items.
-   Duplicates: items can occue multiple times.
+"""
+   List is a built-in data structure with following properties:
+   Duplicates: items can occur multiple times.
    Mutable: items can be modified, replaced, or removed.
    Ordered: maintains the order in which items are added.
    Index-based: items are accessed using their position (starting from 0).
@@ -136,7 +137,7 @@
 
 # print(f"The largest element is {largest} at index {index}")
     
-"""Find the largest greatest element in a list"""
+"""Find the second largest element in a list"""
 # l = [12, 567, 43, 235, 347, 590, 23, 587]
 
 # largest = l[0]
