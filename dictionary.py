@@ -34,7 +34,7 @@ print(d.get("name"))
 d = {1: 'Python', 2: 'Learning', 3: 'For'}
 
 # Adding a new key-value pair
-d["4"] = "Fun"
+d[4] = "Fun"
 
 # Updating an existing value
 d[1] = "Python dictionary"
@@ -81,3 +81,65 @@ for value in d.values():
 # Iterate over key-value pairs
 for key, value in d.items():
     print(f"{key}: {value}")
+
+"""Deep and Shallow Copy"""
+d1 = {1: 'Python', 2: 'Program', 3: 'Learning'}
+d2 = d1  # Deep Copy
+
+d2[1] = "Python dictionary"
+
+print(d1)
+print(d2)
+
+d3 = d1.copy() # Shallow Copy
+
+d3[1] = "Python Shallow Copy"
+
+print(d1)
+print(d3)
+
+
+"""Program to merge two python dictionaries"""
+d1 = {1: 1000, 2: 2000, 3: 3000}
+d2 = {4: 4000, 5: 5000, 6: 6000}
+
+for i in d2:
+    d1[i] = d2[i]
+
+print(f"After merge", d1)
+
+"""Program to sum all the values in a dictionary"""
+d = {1: 1000, 2: 2000, 3: 3000, 4: 4000}
+
+sum = 0
+for i in d:
+    sum += d[i]
+
+print(sum)
+
+"""Program to count the frequency of each elements in a list and create a dictionary with it"""
+l = [1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6, 6, 7, 7]
+
+d = {}
+
+for i in l:
+    if i in d.keys():
+        d[i] += 1
+    else:
+        d[i] = 1
+
+print(f"Dictionary with count", d)
+
+"""Program to combines two dictionaries by adding values for common keys"""
+d1 = {1: 1000, 2: 2000, 3: 3000, 4: 4000}
+d2 = {3: 3000, 4: 4000, 5: 5000, 6: 6000}
+
+
+for i in d2:
+    if i in d1.keys():
+        d1[i] += d2[i]
+
+    else:
+        d1[i] = d2[i]
+
+print(d1)
